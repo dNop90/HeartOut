@@ -1,0 +1,51 @@
+<head>
+	<title>Heart Out - Homepage</title>
+	<link rel="stylesheet" type="text/css" href="css/global.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="navigation">
+		<div class="left">
+			<a href="index.html" class="logo">Heart Out</a>
+			<a href="features.html">Features</a>
+			<a href="membership.html">Membership</a>
+		</div>
+		<div class="right">
+			<a href="login.html">Login</a>
+		</div>
+	</div>
+	<div class="video">
+		<video class="vid" autoplay loop muted>
+			<source src="video/fitness.mp4" type="video/mp4">
+		</video>
+
+		<div class="vid-desc">
+			<span class="desc-title">Heart Out</span>
+			Welcome to the HeartOut Gym! Where the most dedicated of people come to<br>
+			push themselves to the limit and work towards achieving new heights of<br>
+			physical standards for the human body
+		</div>	
+		<div class="gym-desc">
+			<span class="desc-title">Routines Available</span>
+			We have various sorts of routines available such as:<br>
+			- Dynamic Strength-Training<br>
+			- Flexibility Training<br>
+			- Static Strength-Training<br>
+			- Aerobic Training<br>
+			- Circuit Training
+		</div>
+	</div>
+	<script>
+		var video = document.getElementsByTagName("video")[0];
+		video.addEventListener("click", function(){
+			if(video.muted)
+			{
+				video.muted = false;
+			}
+			else
+			{
+				video.muted = true;
+			}
+		});
+	</script>
+</body>
